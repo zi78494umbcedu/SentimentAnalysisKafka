@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Sentiment Analysis Charts</title>
+</head>
+<body>
+    <h1>Sentiment Analysis Charts</h1>
+    <div>
+        {{ bar_fig | safe }}
+    </div>
+    <div>
+        {{ pie_fig | safe }}
+    </div>
+    <div>
+        {{ scatter_fig | safe }}
+    </div>
+    <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+</body>
+</html>
