@@ -1,1 +1,17 @@
-I
+Kakfa: 
+1.Producer.py
+- Line 8: bootstrap_servers = 'localhost:9092'
+- Line 9: topic_name = 'twitter_stream'
+- Line 18: # Load static training dataset from Kaggle, download the kaggle dataset from this repository and give your localpath in the producer for feeding the kafka topic
+- Line 47: Batch processing implmented with # Sleep for 10 minutes before producing the next batch., alter for custom streaming
+
+
+2.Consumer.py
+- Line 31: topic_name = 'twitter_stream'., replace with your topic created in the producer
+- Line 38: "kafka.bootstrap.servers"=="localhost:9092" for Kafka Servers
+- Line 114, 118, 124, 130 commented out., remove comment tags for MONGO Functionality., Current implementation for Data Warehouse(Snowflake) persistence
+- Line 126: replace mongo url:"spark.mongodb.output.uri": "mongodb://localhost:27017/twitter_db.competitors"
+- Line 158, 158: Replace Snowflake Credentials to your domain
+
+3.Dashboard.py
+- Line 9: replace mongo url:"spark.mongodb.output.uri": "mongodb://localhost:27017/twitter_db"
