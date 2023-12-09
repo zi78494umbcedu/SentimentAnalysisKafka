@@ -43,8 +43,11 @@ python3 app.py &
 # Run Kafka Producer
 python3 producer.py
 
-#Run Kafka Consumer(For Mongo persistence - stream/batch processing, For Data Warehouse -> OLAP, For Dashboard streaming)
+#Run Kafka Consumer(For Mongo persistence - stream/batch processing, For Dashboard streaming)
 spark-submit --packages org.mongodb.spark:mongo-spark-connector_2.12:3.0.1,org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0,net.snowflake:snowflake-jdbc:3.12.12,net.snowflake:spark-snowflake_2.12:2.9.0-spark_3.0 consumer.py
+
+#Run Kafka Consumer For Data Warehouse -> OLAP)
+spark-submit --packages org.mongodb.spark:mongo-spark-connector_2.12:3.0.1,org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0,net.snowflake:snowflake-jdbc:3.12.12,net.snowflake:spark-snowflake_2.12:2.9.0-spark_3.0 consumerOLAP.py
 
 
 # Setting up environment for OLAP for new packages
