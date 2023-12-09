@@ -25,10 +25,13 @@ After sentiment analysis, we write the sentiment analysis and competitor names i
 A Single source of truth and an integrated, non-volatile store for historical streamed data by Spark for complex querying helping analysts for Daily/Monthly/Quarterly Summaries 
 Example1: Average Sentiment Score per Company
 <img width="392" alt="Screenshot 2023-12-08 at 9 20 52 PM" src="https://github.com/zi78494umbcedu/SentimentAnalysisKafka/assets/125627136/9456f1d1-f4a1-4d53-814b-d0d41737c71c">
+
 <img width="300" alt="Screenshot 2023-12-08 at 9 21 03 PM" src="https://github.com/zi78494umbcedu/SentimentAnalysisKafka/assets/125627136/1d08a649-31e1-47a6-97a4-0253b584680c">
 
 Example2: Top Competitors by Mention Count
-<img width="600" alt="Screenshot 2023-12-08 at 9 22 04 PM" src="https://github.com/zi78494umbcedu/SentimentAnalysisKafka/assets/125627136/f5fdea08-9b33-4c6d-a38c-c6afd63f367e">
+
+<img width="300" alt="Screenshot 2023-12-08 at 9 22 04 PM" src="https://github.com/zi78494umbcedu/SentimentAnalysisKafka/assets/125627136/f5fdea08-9b33-4c6d-a38c-c6afd63f367e">
 
 Example3: Sentiment Trend Over Time/Daily Summary
-<img width="601" alt="Screenshot 2023-12-08 at 9 22 22 PM" src="https://github.com/zi78494umbcedu/SentimentAnalysisKafka/assets/125627136/ecde6369-05c1-44d7-a221-43b4375e7aa2">
+
+<img width="300" alt="Screenshot 2023-12-08 at 9 22 22 PM" src="https://github.com/zi78494umbcedu/SentimentAnalysisKafka/assets/125627136/ecde6369-05c1-44d7-a221-43b4375e7aa2">
