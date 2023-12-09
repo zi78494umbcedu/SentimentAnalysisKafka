@@ -39,3 +39,15 @@ pip3 install pymongo kafka-python
 # Run Flask Dashboard application
 cd path/to/your/flask/app
 python3 app.py &
+
+# Run Kafka Producer
+python3 producer.py
+
+#Run Kafka Consumer(For Mongo persistence - stream/batch processing, For Data Warehouse -> OLAP, For Dashboard streaming)
+spark-submit --packages org.mongodb.spark:mongo-spark-connector_2.12:3.0.1,org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0,net.snowflake:snowflake-jdbc:3.12.12,net.snowflake:spark-snowflake_2.12:2.9.0-spark_3.0 consumer.py
+
+
+# Setting up environment for OLAP for new packages
+pip3 install --force-reinstall pyspark==3.4
+#Might have to donwgrade from spark3.5 to spark3.4 due to incompatible snowflake and JDBC versions
+spark-shell --packages net.snowflake:snowflake-jdbc:3.9.2,net.snowflake:spark-snowflake_2.12:2.13.0-spark_3.4
